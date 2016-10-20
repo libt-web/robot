@@ -7,14 +7,12 @@ html,body,fieldset,img,iframe,abbr{border:0;}
 i,cite,em,var,address,dfn{font-style:normal;}
 [hidefocus],summary{outline:0;}
 li{list-style:none;}
-h1,h2,h3,h4,h5,h6,small{font-size:100%;}
 sup,sub{font-size:83%;}
 pre,code,kbd,samp{font-family:inherit;}
 q:before,q:after{content:none;}
 textarea{overflow:auto;resize:none;}
 label,summary{cursor:default;}
 a,button{cursor:pointer;}
-h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
 del,ins,u,s,a,a:hover{text-decoration:none;}
 body,textarea,input,button,select,keygen,legend{color:#333;outline:0;}
 body{background:#fff;}
@@ -26,20 +24,116 @@ a,a:hover{color:#333;}
     .app{
         height: 100%;
         width: 100%;
+        position: absolute;
+        box-sizing: border-box; 
+        padding-top: 3.5rem;
+        top: 0;
     }
 }
-.app{
-    height: 100%;
-    width: 900px;
-    margin: 0 auto;
+@media screen and (min-width:768px){
+    .app{
+        height: 100%;
+        width: 900px;
+        position: absolute;
+        margin-left: -450px;
+        left: 50%;
+        box-sizing: border-box; 
+        padding-top: 3.5rem;
+        top: 0;
+    }
 }
 
 .page{
-    background-clip: padding-box;
     height: 100%;
-    padding: 10px;
+    width: 100%;
     display: none;
+    overflow-y: scroll;
 }
 
-/*  */
+html{
+    font-size: 14px;
+}
+
+/* 颜色定义 */
+@light-blue:#3498DB;
+@dark-blue:#2980B9;
+@light-green:#2ECC71;
+@dark-green:#27AE60;
+@light-hulan:#1ABC9C;
+@dark-hulan:#16A085;
+@light-purple:#9B59B6;
+@dark-purple:#8E44AD;
+@light-gray:#ECF0F1;
+@dark-gray:#BDC3C7;
+
+
+/* 框架CSS */
+//头标签
+.rt-header{
+    box-sizing: border-box;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    background-color: @light-blue;
+    color: #fff;
+}
+//列表
+.rt-list{
+    border-top: solid 1px @light-gray;
+    li{
+        border-bottom: solid 1px @light-gray;
+        padding: 1rem;
+        &:hover{
+            background-color: @light-gray;
+        }
+    }
+}
+//轮播
+.rt-slip-pic{
+     margin: auto;
+     position: relative;
+     overflow: hidden;
+     .img-group{
+         z-index: 40;
+         height: 100%;
+         list-style: none;
+         padding: 0;
+         margin: 0;
+         .img-item{
+            float: left;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+         }
+     }
+
+    &.showBtns{
+        &>.before{
+            content:'<';
+            z-index: 50;
+            background: rgba(0,0,0,0.4);
+            color: #fff;
+            font-weight: bold;
+            padding:  15px 10px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+        &>.after{
+            content:'>';
+            z-index: 50;
+            background: rgba(0,0,0,0.4);
+            color: #fff;
+            font-weight: bold;
+            padding: 15px 10px;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
+ }
 

@@ -1,8 +1,5 @@
-<h1>Hello Word</h1>
-<br>
-<a href="#second">前往第二页</a>
-<ul>
+<ul id="mainList" class="rt-list">
 {{each list as value}}
-    <li>用户：{{value.name}}&nbsp;年龄：{{value.age}}</li>
+    <li data-href="{{value.href}}">{{value.text}}</li>
 {{/each}}
 </ul>

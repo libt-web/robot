@@ -5,7 +5,7 @@ define('main',['jquery'],function($){
             $mainApp=$('#mainApp');
 		this.pages={
 			'welcome':null,
-            'second':null,
+            'lazyload':null,
 		};
 		this.parseURL=function(url){
 			var result={query:{}};

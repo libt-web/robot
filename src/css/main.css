@@ -79,15 +79,6 @@ summary {
 li {
   list-style: none;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-small {
-  font-size: 100%;
-}
 sup,
 sub {
   font-size: 83%;
@@ -113,17 +104,6 @@ summary {
 a,
 button {
   cursor: pointer;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-em,
-strong,
-b {
-  font-weight: bold;
 }
 del,
 ins,
@@ -156,17 +136,94 @@ a:hover {
   .app {
     height: 100%;
     width: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    padding-top: 3.5rem;
+    top: 0;
   }
 }
-.app {
-  height: 100%;
-  width: 900px;
-  margin: 0 auto;
+@media screen and (min-width: 768px) {
+  .app {
+    height: 100%;
+    width: 900px;
+    position: absolute;
+    margin-left: -450px;
+    left: 50%;
+    box-sizing: border-box;
+    padding-top: 3.5rem;
+    top: 0;
+  }
 }
 .page {
-  background-clip: padding-box;
   height: 100%;
-  padding: 10px;
+  width: 100%;
   display: none;
+  overflow-y: scroll;
 }
-/*  */
+html {
+  font-size: 14px;
+}
+/* 颜色定义 */
+/* 框架CSS */
+.rt-header {
+  box-sizing: border-box;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  background-color: #3498db;
+  color: #fff;
+}
+.rt-list {
+  border-top: solid 1px #ecf0f1;
+}
+.rt-list li {
+  border-bottom: solid 1px #ecf0f1;
+  padding: 1rem;
+}
+.rt-list li:hover {
+  background-color: #ecf0f1;
+}
+.rt-slip-pic {
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.rt-slip-pic .img-group {
+  z-index: 40;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.rt-slip-pic .img-group .img-item {
+  float: left;
+  height: 100%;
+}
+.rt-slip-pic .img-group .img-item img {
+  width: 100%;
+  height: 100%;
+}
+.rt-slip-pic.showBtns > .before {
+  content: '<';
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-weight: bold;
+  padding: 15px 10px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.rt-slip-pic.showBtns > .after {
+  content: '>';
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-weight: bold;
+  padding: 15px 10px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}

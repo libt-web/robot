@@ -1,5 +1,5 @@
 exports["localhost"] = {
-    "root": "E:\\workspaceMine\\robot\\src\\",
+    "root": "E:\\github\\robot\\src\\",
     "port": 9006,
 	//简单代理设置
     "agent":{
