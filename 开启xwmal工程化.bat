@@ -1,4 +1,0 @@
-gulp
-cmd.exe
-
-
