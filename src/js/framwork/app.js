@@ -5,14 +5,14 @@
 
     var config = {
         //serviceUrl: "http://192.9.200.96:8083/ChainWayInsurance/rest/",
-        serviceUrl: "http://120.24.227.202:8080/ChainWayInsurance/rest/",  //数据接口
-        webUrl: "http://www.chbcar.com/YJZB/",
+        serviceUrl: "http://xxxxxxxx/ChainWayInsurance/rest/",  //数据接口
+        webUrl: "http://xxxxxxxx/YJZB/",
         //imgUrl: "http://192.9.200.96:8083/ChainWayInsurance/servlet/ShowImageServlet.do?",
-        imgUrl: "http://120.24.227.202:8080/ChainWayInsurance/servlet/ShowImageServlet.do?",
-        aliPayUrl: "http://120.24.227.202:8080/EmatchCHBServiceTest/alipay/alipayConfirmOrder.jsp",//阿里支付页面
+        imgUrl: "http://xxxxxxxx/ChainWayInsurance/servlet/ShowImageServlet.do?",
+        aliPayUrl: "http://xxxxxxxx/EmatchCHBServiceTest/alipay/alipayConfirmOrder.jsp",//阿里支付页面
         //baiduLocationKey: "attWmB1DfsvNGfhrvuaXZqrG",//百度定位 Key
         baiduLocationUrl: 'http://api.map.baidu.com/geocoder/v2/?ak=attWmB1DfsvNGfhrvuaXZqrG&callback=?&location=##@LocX@##,##@Locy@##&output=json&pois=0',
-        wxAppId: "wx225401c6017c7b3f",//微信公众号ID
+        wxAppId: "xxxxxxxx",//微信公众号ID
         loadingHtml: '<div id="App_Loading" class="mask-lyout"><div class="loading-mask"><div><p>'
         + '<i class="fa fa-spinner fa-spin fa-2x"></i></p><p>请稍候...</p>'
         + '</div></div></div>',
